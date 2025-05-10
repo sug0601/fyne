@@ -43,7 +43,7 @@ func LaunchProjects() {
 		}
 
 		var command string
-		if name == "autosub-ope-frontend" {
+		if name == "" {
 			command = fmt.Sprintf("cd '%s'; git fetch; git checkout -f %s; git pull origin %s; sleep 10; yarn dev", projectPath, branch, branch)
 		} else {
 			command = fmt.Sprintf("cd '%s'; git fetch; git checkout -f %s; git pull origin %s; yarn dev", projectPath, branch, branch)

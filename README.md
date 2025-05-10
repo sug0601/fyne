@@ -1,5 +1,5 @@
 # 概要
-- microserviceをitermを用いて、一度に起動する
+- microserviceを一度に起動する
 
 ### 以下のみ対応
 - iterm
@@ -8,4 +8,5 @@
 ### 開始方法
 ```bash
 go mod tidy
+go run main.go
 ```
